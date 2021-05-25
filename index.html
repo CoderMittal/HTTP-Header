@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML REQUEST HEADER</title>
+</head>
+<body><center>
+    <div style="background-color:yellow;color:red;border: 2px solid red;font-size:20px;">
+    <p style="font-size:20px;">To submit Data for your username first Get the Token Number.</p>
+    <button onclick = "getToken()">Get Token Number</button><br>
+    <p id = "tokenArea" style = "color:green;"></p></div>
+    </div>
+    <br>
+    <div style="background-color:yellow;color:red;border: 2px solid red;font-size:20px;">
+        <br>
+    <form>
+        <label for = "userName">Username:</label>
+        <input type = "text" id = "userName" value = "Enter Username"><br><br>
+        <label for = "Data">Data:</label>
+        <input type = "text" id = "Data" value = "Enter Data" size="50"><br><br>
+        <label for = "tokenNumber">Token Number:</label>
+        <input type = "text" id = "tokenNumber" value = "Enter Given Token Number"><br><br>
+    </form>
+    <button onclick = "Register()">Send Data</button><br>
+    <p id = "Error" style="background-color:red;color:yellow;"></p>
+    <p id = "registerArea" style="background-color:rgb(159, 162, 163);color:Blue;"></p>
+    </div>
+    <br>
+    <div style="background-color:yellow;color:red;border: 2px solid red;font-size:20px;">
+        <br>
+    <form>
+        <label for = "tokenNo">Token Number:</label>
+        <input type = "text" id = "tokenNo" value = "Enter Given Token Number"><br><br>
+    </form>
+    <button onclick = "GetData()">Get Data</button><br><br>
+    <p id = "error" style="background-color:red;color:yellow;"></p>
+    <p id = "userdata" style="background-color:rgb(159, 162, 163);color:Blue;"></p>
+</div>
+</center>
+    <script src = "script.js"></script>
+</body>
